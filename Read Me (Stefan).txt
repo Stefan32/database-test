@@ -1,0 +1,11 @@
+To start a new project:
+
+1. Duplicate Folder and Rename
+2. Create new repository on GitHub
+3. In gitBash, Nav to new folder and type:
+echo "# truck-stop" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Stefan32/truck-stop.git
+git push -u origin master

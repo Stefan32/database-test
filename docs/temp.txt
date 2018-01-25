@@ -1,0 +1,69 @@
+<div class="groove-module">
+    <div class="tempo-container tempo-container__groove">
+          <h3 class="groove-module__heading">Hi-Hat Lift 10</h3>
+          <div class="tempo-container__heading">Tempo:</div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-60" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-60">60</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-65" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-65">65</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-70" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-70">70</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-75" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-75">75</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-80" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-80">80</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-85" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-85">85</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-90" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-90">90</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-95" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-95">95</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-100" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-100">100</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-105" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-105">105</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-110" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-110">110</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-115" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-115">115</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-120" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-120">120</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-125" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-125">125</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-130" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-130">130</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-135" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-135">135</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-140" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-140">140</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-145" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-145">145</label>
+          </div>
+          <div class="tempo-container__module">
+              <input id="gr09htcg15-150" type="checkbox" class="tempo-container__button tempo-container__button--not-completed tempo loadTempo"><label for="gr09htcg15-150">150</label>
+          </div>
+      </div>
+
+    <!-- IMAGE -->
+
+    <div class="image image__groove">
+        <img src="../../images/grooves/gr09htcg15.png" alt="groove page 01">
+    </div>
+</div>

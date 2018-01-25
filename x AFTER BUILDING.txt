@@ -1,0 +1,8 @@
+in docs/
+make folder temp/styles
+copy styles-862539.css and rename to styles.css only
+
+00-tools.html 
+rename paths: delete one "folder up" jump from paths
+
+(or replace with 00-tools.html in replace folder)

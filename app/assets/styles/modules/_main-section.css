@@ -1,0 +1,3 @@
+.main-section {
+  @mixin clearfix;
+}

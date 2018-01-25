@@ -1,0 +1,19 @@
+https://login.mymusicstaff.com/Teacher/Calendar/Default.aspx
+calendar view as iframe
+
+
+
+rename codes on trinity rock and pop playback and improv pages from 
+
+PL01-C and PL02-C at the end to PL01-60 and PL01-65
+the id's should stay unchanged
+
+
+
+
+
+upload all pdfs to musicstaff
+
+all own song bookmarks
+
+check footer on all pages

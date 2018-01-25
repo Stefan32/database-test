@@ -1,0 +1,9 @@
+.timer {
+  position: fixed;
+  top: 130px;
+  right: 40px;
+  text-align: right;
+  color: $mainGrey;
+  cursor: pointer;
+  font-size: .8rem;
+}

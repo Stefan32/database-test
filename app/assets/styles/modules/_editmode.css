@@ -1,0 +1,80 @@
+.hideMe {
+  display: none;
+}
+
+.main-input-section {
+  @mixin clearfix;
+  margin-top: 20px;
+}
+
+
+.userStartBtn {
+    float: left;
+    margin: 0px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $mainRed;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 200%;
+    cursor: pointer;
+    @mixin noselect;
+}
+
+.heading_3 {
+  display: block;
+  width: 100px;
+  color: white;
+  background-color: $mainRed;
+  padding: 5px;
+
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.info_block {
+  width: 90px;
+  float: left;
+  text-align: center;
+
+  &--heading {
+    display: block;
+    font-size: .85rem;
+    width: 100px;
+    color: white;
+    background-color: $mainGrey;
+    padding: 5px 0;
+    cursor: pointer;
+    @mixin noselect;
+  }
+
+  &--subheading {
+    display: block;
+    padding: 5px;
+    font-size: .85rem;
+  }
+
+  input {
+    width: 90%;
+    color: $mainRed;
+    outline: none;
+  }
+
+  button {
+    border: 1px solid $mainGrey;
+    width: 90%;
+    margin-top: 3px;
+    font-size: .85rem;
+    transition: all 0.3s ease-out;
+    &:hover {
+      color: #FFF;
+      background-color: $mainGrey;
+
+    }
+  }
+
+}

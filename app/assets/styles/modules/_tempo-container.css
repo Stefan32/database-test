@@ -1,0 +1,111 @@
+.tempo-container {
+
+  @mixin noselect;
+  @mixin clearfix;
+  padding: 4rem 0 2rem 0;
+
+  &__heading {
+    float: left;
+    color: $mainRed;
+    margin-top: 5px;
+    font-size: .8rem;
+    cursor: default;
+  }
+
+  &__module {
+    float: left;
+    width: 25px;
+
+    & > input {
+      margin-left: 7px;
+    }
+
+    & > label {
+      display: block;
+      text-align: center;
+      font-size: .7rem;
+      font-weight: 300;
+      color: $mainGrey;
+    }
+
+    &--fill-recall {
+      margin-top: 22px;
+      margin-left: 30px;
+    }
+
+    &--te {
+      margin-top: -6px;
+      margin-left: 10px;
+
+      &-fill {
+        margin-top: 20px;
+        margin-left: 30px;
+
+        & > input {
+          position: relative;
+          top: -13px;
+          left: 60px;
+        }
+      }
+    }
+  }
+
+  &--mcq {
+    margin-left: 2px;
+  }
+
+  &__song {
+    margin-top: -1rem;
+  }
+}
+
+.sight-reading-module {
+
+  & .tempo-container__module > input {
+    position: relative;
+    top: -14px;
+    left: 58px;
+  }
+
+
+
+}
+
+
+/*
+.tempo-container {
+
+  @mixin clearfix;
+  @mixin noselect;
+  padding: 2rem 0;
+
+  &__heading {
+    color: $mainRed;
+    float: left;
+    line-height: 35px;
+    margin-right: 5px;
+  }
+
+  &__button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+    margin-right: 3px;
+    color: #FFF;
+    font-size: .9rem;
+    cursor: pointer;
+
+    &--not-completed {
+      background-color: $mainGrey;
+    }
+
+    &--completed {
+      background-color: $mainRed;
+    }
+  }
+}
+
+*/

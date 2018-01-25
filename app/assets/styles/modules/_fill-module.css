@@ -1,0 +1,29 @@
+.fill-module {
+
+  float: left;
+  padding-left: 2rem;
+
+  img {
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    max-width: 1100px;
+  }
+
+  &__heading {
+    margin-bottom: 2.2rem;
+    padding-left: .5rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $mainGrey;
+    border-left: 2px solid $mainRed;
+  }
+
+  &--2bar {
+
+    img {
+      margin-left: 0;
+      max-width: 1200px;
+    }
+  }
+
+}

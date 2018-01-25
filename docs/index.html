@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Student Temp List</title>
+  <meta name="keywords" content="Student Database">
+  <meta name="description" content="One app to manage student lessons and progress.">
+
+  <link rel="stylesheet" href="assets/styles/styles-c22b3ec207.css"/>
+
+  <script src="assets/scripts/Vendor-a840059376.js"></script>
+
+</head>
+<body>
+
+  <div class="page-header">
+      <!-- SECTION -->
+      <div class="page-header__back-btn">
+          <a href="assets/pages/levels/00-level-section.html">Profile</a>
+      </div>
+      <div class="page-header__back-btn">
+          <a href="assets/pages/list/student-list.html">Student List</a>
+      </div>
+  </div>
+
+<div class="main-input-section">
+  <!-- - - - - - - - - - - - - -->
+  <!-- reveal Create ID button -->
+  <!-- - - - - - - - - - - - - -->
+  <div id="createIdDiv" class="reveal userStartBtn">
+  +
+  </div>
+  <!--<button  type="button">revealCreateId</button>-->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--      Create ID div      -->
+  <!-- - - - - - - - - - - - - -->
+  <div id="createIdDiv-input" class="hideMe">
+      <p>Id:
+          <input id="userId-input" type="text" name="userId-input" placeholder="user ID">
+          <button id="userIdBtn" class="createBtn" type="button" name="userId">Create</button></p>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--    Current User ID      -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+      <span class="info_block--heading" id="userId">ID:</span><span class="loadMe info_block--subheading" name="id">Log In</span>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--    Current User Name      -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userName" class="reveal info_block--heading">Name:</span><span class="loadMe info_block--subheading" name="name"></span>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Name Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userName-input" class="hideMe">
+        <input id="name-input" type="text" name="name-input" placeholder="Name">
+        <button id="nameBtn" class="updateBtn" type="button" name="name">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Surname   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userSurname" class="reveal info_block--heading">Surname:</span><span class="loadMe info_block--subheading" name="surname"></span>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Surname Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userSurname-input" class="hideMe">
+        <input id="surname-input" type="text" name="surname-input" placeholder="Surname">
+        <button id="surnameBtn" class="updateBtn" type="button" name="surname">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Skill Level   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userSkillLevel" class="reveal info_block--heading">Skill Level:</span><span class="loadMe info_block--subheading" name="skillLevel"></span>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Skill Level Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userSkillLevel-input" class="hideMe">
+        <input id="skillLevel-input" type="text" name="skillLevel-input" placeholder="Skill Level">
+        <button id="skillLevelBtn" class="updateBtn" type="button" name="skillLevel">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User School   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userSchool" class="reveal info_block--heading">School:</span><span class="loadMe info_block--subheading" name="school"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User School Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userSchool-input" class="hideMe">
+        <input id="school-input" type="text" name="school-input" placeholder="School">
+        <button id="schoolBtn" class="updateBtn" type="button" name="school">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Grade   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userGrade" class="reveal info_block--heading">Grade:</span><span class="loadMe info_block--subheading" name="grade"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Grade Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userGrade-input" class="hideMe">
+        <input id="grade-input" type="text" name="grade-input" placeholder="Grade">
+        <button id="gradeBtn" class="updateBtn" type="button" name="grade">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Exam   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userExam" class="reveal info_block--heading">Exam:</span><span class="loadMe info_block--subheading" name="exam"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Exam Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userExam-input" class="hideMe">
+        <input id="exam-input" type="text" name="exam-input" placeholder="Exam">
+        <button id="examBtn" class="updateBtn" type="button" name="exam">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Hand   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userLeadHand" class="reveal info_block--heading">Lead Hand:</span><span class="loadMe info_block--subheading" name="leadHand"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Hand Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userLeadHand-input" class="hideMe">
+        <input id="leadHand-input" type="text" name="leadHand-input" placeholder="Lead Hand">
+        <button id="leadHandBtn" class="updateBtn" type="button" name="leadHand">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Contract   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userContract" class="reveal info_block--heading">Contract:</span><span class="loadMe info_block--subheading" name="contract"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Contract Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userContract-input" class="hideMe">
+        <input id="contract-input" type="text" name="contract-input" placeholder="Contract">
+        <button id="contractBtn" class="updateBtn" type="button" name="contract">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Gender   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userGender" class="reveal info_block--heading">Gender:</span><span class="loadMe info_block--subheading" name="gender"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Gender Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userGender-input" class="hideMe">
+        <input id="gender-input" type="text" name="gender-input" placeholder="Gender">
+        <button id="genderBtn" class="updateBtn" type="button" name="gender">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Birthday   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userBirthday" class="reveal info_block--heading">Birthday:</span><span class="loadMe info_block--subheading" name="birthday"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Birthday Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userBirthday-input" class="hideMe">
+        <input id="birthday-input" type="text" name="birthday-input" placeholder="Birthday">
+        <button id="birthdayBtn" class="updateBtn" type="button" name="birthday">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Drumkit   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userDrumkit" class="reveal info_block--heading">Drumkit:</span><span class="loadMe info_block--subheading" name="drumkit"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Drumkit Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userDrumkit-input" class="hideMe">
+        <input id="drumkit-input" type="text" name="drumkit-input" placeholder="Drumkit">
+        <button id="drumkitBtn" class="updateBtn" type="button" name="drumkit">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Practice Pad   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userPracticePad" class="reveal info_block--heading">PracticePad:</span><span class="loadMe info_block--subheading" name="practicePad"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Practice Pad Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userPracticePad-input" class="hideMe">
+        <input id="practicePad-input" type="text" name="practicePad-input" placeholder="PracticePad">
+        <button id="practicePadBtn" class="updateBtn" type="button" name="practicePad">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+
+  <!-- - - - - - - - - - - - - -->
+  <!--  Current User Metronome   -->
+  <!-- - - - - - - - - - - - - -->
+  <div class="info_block">
+    <span id="userMetronome" class="reveal info_block--heading">Metronome:</span><span class="loadMe info_block--subheading" name="metronome"></span>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - -->
+  <!--Current User Practice Pad Edit Div-->
+  <!-- - - - - - - - - - - - - -->
+  <div id="userMetronome-input" class="hideMe">
+        <input id="metronome-input" type="text" name="metronome-input" placeholder="Metronome">
+        <button id="metronomeBtn" class="updateBtn" type="button" name="metronome">Update</button>
+  </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </div>
+</div>
+
+<div class="row lessons-headings wrapper--bigger-left">
+    <div class="row__medium-1">
+        <h3>Date</h3>
+    </div>
+    <div class="row__medium-1">
+        <h3>Attended</h3>
+    </div>
+    <div class="row__medium-4">
+        <h3>Notes</h3>
+    </div>
+    <div class="row__copy-btn">
+        <div class="new-lesson-button">
+            +
+        </div>
+    </div>
+</div>
+
+<div id="new-lesson-modal" class="new-lesson-modal modal__hidden">
+    <div class="new-lesson-modal__head">
+        Add New Lesson
+    </div>
+    <div class="new-lesson-modal__date">
+        <div class="new-lesson-modal__date--name">
+            Date:
+        </div>
+        <input class="new-lesson-modal__date--input" type="date" name="" value="">
+    </div>
+    <div class="new-lesson-modal__attended">
+        <div class="new-lesson-modal__attended--name">
+            Attended:
+        </div>
+        <input id="atYes" class="new-lesson-modal__attended--input" type="radio" name="attended" value="yes"><label for="atYes">Yes</label>
+        <input id="atNo" class="new-lesson-modal__attended--input" type="radio" name="attended" value="no"><label for="atNo">No</label>
+    </div>
+    <div class="new-lesson-modal__lesson-notes">
+        <div class="new-lesson-modal__lesson-notes--name">
+            Lesson Notes:
+        </div>
+        <textarea class="new-lesson-modal__lesson-notes--input" name="name"></textarea>
+    </div>
+    <div class="new-lesson-modal__submit">
+        <button id="add-lesson" class="new-lesson-modal__submit--add" type="button" name="button">Add</button>
+        <button id="cancel-lesson" class="new-lesson-modal__submit--cancel" type="button" name="button">Cancel</button>
+    </div>
+</div>
+
+<div id="lesson-module-container" class="lesson-module-container">
+    <div id="start-lesson" class="wrapper--bigger-left">
+            <a href="#">Back to Top</a>
+    </div>
+</div>
+
+
+<!-- - - - - - - - - - - - -
+<div class="lesson-module wrapper--bigger-left">
+    <div class="row__medium-1">
+        <p>26-09-2017</p>
+    </div>
+    <div class="row__medium-1">
+        <p>no</p>
+    </div>
+    <div class="row__medium-4">
+        <textarea class="lesson-text" id="copyBtn3">This is some exaple text that I am going to try and copy to my clipboard</textarea>
+    </div>
+    <div class="row__copy-btn">
+        <button class="copyBtn" type="button" name="3">Copy</button>
+    </div>
+</div>
+
+<div class="lesson-module wrapper--bigger-left">
+    <div class="row__medium-1">
+        <p>22-09-2017</p>
+    </div>
+    <div class="row__medium-1">
+        <p>Yes</p>
+    </div>
+    <div class="row__medium-4">
+        <p id="copyBtn2">Some other text that needs copying</p>
+    </div>
+    <div class="row__copy-btn">
+        <button class="copyBtn" type="button" name="2">Copy</button>
+    </div>
+</div>
+
+<div class="lesson-module wrapper--bigger-left">
+    <div class="row__medium-1">
+        <p>15-09-2017</p>
+    </div>
+    <div class="row__medium-1">
+        <p>Yes</p>
+    </div>
+    <div class="row__medium-4">
+        <p id="copyBtn1">Was not a public holiday</p>
+    </div>
+    <div class="row__copy-btn">
+        <button class="copyBtn" type="button" name="1">Copy</button>
+    </div>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="studentsdb.js"></script>
+<script src="assets/scripts/App-c1fe62a4bf.js"></script>
+
+</body>
+</html>

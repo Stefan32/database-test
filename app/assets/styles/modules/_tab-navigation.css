@@ -1,0 +1,33 @@
+.tab-navigation {
+
+  @mixin clearfix;
+  @mixin noselect;
+
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+
+  li {
+    float: left;
+    list-style: none;
+    display: inline-block; /* ? */
+    font-size: 1.1rem;
+    margin-left: 0.1rem;
+  }
+
+  a {
+    text-decoration: none;
+    padding: .2rem 1.4rem;
+    background-color: $mainGrey;
+    border-radius: 10px 10px 0 0;
+    color: #FFF;
+  }
+
+  a:hover {
+    background-color: black;
+  }
+
+  .focus {
+    background-color: $mainRed;
+  }
+
+}

@@ -1,0 +1,29 @@
+.rudiment-module {
+
+  float: left;
+  width: 550px;
+  padding-left: 2rem;
+
+  img {
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    max-width: 90%;
+  }
+
+  &__heading {
+    margin-bottom: 2.2rem;
+    padding-left: .5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $mainGrey;
+    border-left: 2px solid $mainRed;
+  }
+
+  &--2bar {
+
+    img {
+      margin-left: 0;
+    }
+  }
+
+}

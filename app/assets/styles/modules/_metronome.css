@@ -1,0 +1,51 @@
+.metronome {
+
+  width: 200px;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &__heading {
+    height: 25px;
+    background-color: $mainRed;
+    color: #FFF;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  &__tempo {
+    @mixin noselect;
+    float: left;
+    text-align: center;
+    color: $mainGrey;
+    width: 33%;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+
+  &__tempo.tempoAdjust {
+    font-weight: 500;
+    font-size: 1.2rem;
+    transform: scaleY(1.5);
+    padding: .2rem;
+    margin-top: 12px;
+  }
+
+  &__button-play {
+    float: left;
+    font-size: .9rem;
+    color: green;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  &__button-stop {
+    float: right;
+    font-size: .9rem;
+    color: $mainRed;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+  }
+}

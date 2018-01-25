@@ -1,0 +1,21 @@
+.wrapper {
+  overflow: hidden;
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--metronome {
+    max-width: 175px;
+    height: auto;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--bigger-left {
+    max-width: 1300px;
+    margin-left: 3rem;
+  }
+}

@@ -1,0 +1,52 @@
+.playback-section {
+
+  @mixin clearfix;
+  @mixin noselect;
+
+  position: fixed;
+  top: 0;
+  border-top: 1px solid $mainGrey;
+  right: 200px;
+  background-color: #FFF;
+  font-size: .85rem;
+
+  .song__button-play {
+    float: left;
+    box-sizing: border-box;
+    margin-left: .5rem;
+    padding: .85rem 1.2rem;
+    color: green;
+    border-bottom: 2px solid #FFF;
+    transition: all .15s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 2px solid $mainGrey;
+      background-color: rgba(0, 0, 0, .05);
+    }
+  }
+
+  .song__button-stop {
+    float: left;
+    margin-left: .5rem;
+    padding: .85rem 1.2rem;
+    color: $mainRed;
+    border-bottom: 2px solid #FFF;
+    transition: all .15s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 2px solid $mainRed;
+      background-color: rgba(0, 0, 0, .05);
+    }
+  }
+
+  &--in-flow {
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    border-top: none;
+  }
+
+}

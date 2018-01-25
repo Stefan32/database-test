@@ -1,0 +1,41 @@
+.page-header {
+
+  border-top: 1px solid $mainGrey;
+
+  &__back-btn {
+    float: left;
+    margin-right: 50px;
+    font-size: 1.5rem;
+    padding-top: .9rem;
+    padding-left: 1rem;
+
+    & > a {
+      text-decoration: none;
+    }
+
+  }
+
+  &__nav-wrapper {
+    width: 1150px;
+  }
+
+  &__prevnext {
+    float: left;
+    padding-top: 2px;
+    text-decoration: none;
+    font-size: 2.6rem;
+    font-weight: 300;
+  }
+
+  @mixin clearfix;
+
+  &__page-name {
+    float: left;
+    margin-left: 35px;
+    margin-right: 35px;
+    color: $mainRed;
+    font-size: 1.6rem;
+    padding-top: .7rem;
+  }
+
+}

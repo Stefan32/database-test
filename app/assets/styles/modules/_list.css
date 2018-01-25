@@ -1,0 +1,59 @@
+.search {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid $mainGrey;
+  border-radius: 25px;
+  outline: none;
+}
+
+.sort {
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background-color: $mainGrey;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $mainRed;
+  }
+}
+
+.back {
+  margin-left: 20px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background-color: $mainGrey;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+
+  & a {
+    color: white;
+  }
+
+  &:hover {
+    background-color: $mainRed;
+  }
+}
+
+.deleteStudentBtn {
+  position: relative;
+  top: -55px;
+  left: 350px;
+  font-size: .85rem;
+
+  &:hover {
+    color: $mainRed;
+  }
+}
+
+#list > li {
+  list-style: none;
+  padding-bottom: 7px;
+}

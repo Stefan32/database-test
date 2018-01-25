@@ -1,0 +1,22 @@
+.row {
+
+  @mixin clearfix;
+
+  &__medium-1 {
+    float: left;
+    width: 8%;
+    border-bottom: 1px solid black;
+  }
+
+  &__medium-4 {
+    float: left;
+    width: 80%;
+    border-bottom: 1px solid black;
+  }
+
+  &__copy-btn {
+    float: left;
+    width: 3%;
+  }
+
+}
