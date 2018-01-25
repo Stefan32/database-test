@@ -59,7 +59,7 @@ names.push(quaverGroove1);
 var quaverGroove2 = {
   section: 'Grooves',
   title: 'Groove 2',
-  code: 'gr03qrgv1-',
+  code: 'gr03qrgv2-',
   minTempo: 60,
   maxTempo: 110,
   link: '03-quaver-rock-groove-variations'
