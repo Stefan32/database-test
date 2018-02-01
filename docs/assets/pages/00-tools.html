@@ -9,11 +9,11 @@
   <meta name="description" content="One app to manage student lessons and progress.">
 
   <!-- build:css assets/styles/styles.css -->
-  <link rel="stylesheet" href="../../../temp/styles/styles.css">
+  <link rel="stylesheet" href="../../temp/styles/styles.css">
   <!-- endbuild -->
 
   <!-- build:js assets/scripts/Vendor.js -->
-  <script src="../../../temp/scripts/Vendor.js"></script>
+  <script src="../../temp/scripts/Vendor.js"></script>
   <!-- endbuild -->
 
 </head>
@@ -21,31 +21,41 @@
 <body>
 
 <!-- METRONOME -->
+
   <div class="metronome">
       <div class="metronome__heading"><span class="loadMe" name="name">No user</span> <span class="loadMe" name="surname">-</span></div>
           <div class="wrapper--metronome">
               <div id="tempoMinus" class="metronome__tempo tempoAdjust"><</div>
               <div id="mainTempo" class="metronome__tempo">60</div>
               <div id="tempoPlus" class="metronome__tempo tempoAdjust">></div>
-              <div class="metronome__button-play">PLAY</div>
-              <div class="metronome__button-stop">STOP</div>
+              <div class="metronome__button-play" onclick="metronomeApp.toggle()">PLAY</div>
+              <div class="metronome__button-stop" onclick="metronomeApp.toggle()">STOP</div>
           </div>
   </div>
 
-<!-- TIMER -->
-  <div id="clockdiv" class="timer">
-      Start Timer
-  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+          integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+          integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+          crossorigin="anonymous"></script>
 
 
+  <script src="metronome/js/metronome-sound.js"></script>
+  <script src="metronome/js/visualization.js"></script>
+  <script src="metronome/js/app.js"></script>
 
-
-<!-- _______________ SOURCES _______________________ -->
-  <script type="text/javascript" src="../../../jquery.js"></script>
-  <script type="text/javascript" src="../../../studentsdb.js"></script>
-  <!-- build:js assets/scripts/App.js -->
-  <script src="/../../../temp/scripts/App.js"></script>
-  <!-- endbuild -->
+  <!-- _______________ SOURCES _______________________ -->
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../studentsdb.js"></script>
+    <!-- build:js assets/scripts/App.js -->
+    <script src="/../../temp/scripts/App.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

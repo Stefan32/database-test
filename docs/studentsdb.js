@@ -5,7 +5,6 @@ $(document).ready(function() {
   refreshStudent();
   refreshTempo();
   refreshProgress();
-  createMetronomeSounds();
   createSong();
   displayLessons();
 
@@ -305,37 +304,6 @@ function createSong() {
 //////////////////////////////////////////////////////////////////////////////
 
 //
-//  This is function to create metronome sound objects
-//
-function createMetronomeSounds() {
-  var playMetro = document.createElement("audio");
-  playMetro.setAttribute("src", "../audio/metronome/60.wav");
-
-    //
-    //  Monitors when the metronome play button is clicked
-    //
-    $(".metronome__button-play").click(function() {
-      var setTempo = $("#mainTempo").html();
-      var sauce = "../audio/metronome/" + setTempo + ".wav";
-      playMetro.loop = true;
-      playMetro.setAttribute("src", sauce);
-      playMetro.play();
-    });
-    //////////////////////////////////////////////////////////////////////////////
-
-    //
-    //  Monitors when the metronome play button is clicked
-    //
-    $(".metronome__button-stop").click(function() {
-      playMetro.pause();
-    });
-    //////////////////////////////////////////////////////////////////////////////
-};
-//////////////////////////////////////////////////////////////////////////////
-
-
-
-//
 //  Monitors when the metronome tempo-adjust button is clicked
 //
 $(".tempoAdjust").click(function() {
@@ -353,11 +321,13 @@ function tempoAdjust(adjustDir) {
     var newTempo = startTempo - 5;
       if (newTempo < 50) {newTempo = 50};
     $("#mainTempo").html(newTempo);
+    metronomeApp.setTempo(newTempo);
   } else {
     if ( adjustDir == "tempoPlus" ) {
       var newTempo = startTempo - 5 + 10;
       if (newTempo > 200) {newTempo = 200};
       $("#mainTempo").html(newTempo);
+      metronomeApp.setTempo(newTempo);
     }
   }
 };
