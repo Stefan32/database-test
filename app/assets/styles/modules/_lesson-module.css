@@ -61,6 +61,7 @@
 .new-lesson-modal {
   @mixin noselect;
   position: fixed;
+  top: 223px;
   width: 900px;
   margin-left: 200px;
   background-color: #f7f7f7;
