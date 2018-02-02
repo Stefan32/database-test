@@ -309,7 +309,6 @@ function createSong() {
 //
 function createMetronomeSounds() {
   var playMetro = document.createElement("audio");
-  playMetro.setAttribute("src", "../audio/metronome/60.mp3");
 
     //
     //  Monitors when the metronome play button is clicked
