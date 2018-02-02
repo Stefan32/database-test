@@ -309,14 +309,14 @@ function createSong() {
 //
 function createMetronomeSounds() {
   var playMetro = document.createElement("audio");
-  playMetro.setAttribute("src", "../audio/metronome/60.wav");
+  playMetro.setAttribute("src", "../audio/metronome/60.mp3");
 
     //
     //  Monitors when the metronome play button is clicked
     //
     $(".metronome__button-play").click(function() {
       var setTempo = $("#mainTempo").html();
-      var sauce = "../audio/metronome/" + setTempo + ".wav";
+      var sauce = "../audio/metronome/" + setTempo + ".mp3";
       playMetro.loop = true;
       playMetro.setAttribute("src", sauce);
       playMetro.play();
@@ -356,7 +356,7 @@ function tempoAdjust(adjustDir) {
   } else {
     if ( adjustDir == "tempoPlus" ) {
       var newTempo = startTempo - 5 + 10;
-      if (newTempo > 200) {newTempo = 200};
+      if (newTempo > 160) {newTempo = 160};
       $("#mainTempo").html(newTempo);
     }
   }
