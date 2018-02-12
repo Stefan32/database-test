@@ -509,7 +509,6 @@ a {
 }
 
 .copyBtn {
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   font-size: .8rem;
   margin-top: 15px;
@@ -800,7 +799,6 @@ a {
   width: 90%;
   margin-top: 3px;
   font-size: .85rem;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -1060,7 +1058,6 @@ a {
   width: 400px;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: all .15s ease-out;
   transition: all .15s ease-out;
 }
 
@@ -1282,7 +1279,6 @@ a {
   padding: .85rem 1.2rem;
   color: green;
   border-bottom: 2px solid #FFF;
-  -webkit-transition: all .15s ease-out;
   transition: all .15s ease-out;
   cursor: pointer;
 }
@@ -1298,7 +1294,6 @@ a {
   padding: .85rem 1.2rem;
   color: crimson;
   border-bottom: 2px solid #FFF;
-  -webkit-transition: all .15s ease-out;
   transition: all .15s ease-out;
   cursor: pointer;
 }

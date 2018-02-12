@@ -5,8 +5,19 @@ $(document).ready(function() {
   refreshStudent();
   refreshTempo();
   refreshProgress();
+  createMetronomeSounds();
   createSong();
   displayLessons();
+
+  function copyToClipboard(val){
+      var dummy = document.createElement("input");
+      document.body.appendChild(dummy);
+      dummy.setAttribute("id", "dummy_id");
+      document.getElementById("dummy_id").value=val;
+      dummy.select(val);
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+    };
 
   //
   //  This monitors when a copy button is clicked and performs the function
@@ -16,16 +27,27 @@ $(document).ready(function() {
     var copyId = "copyBtn" + btnName;
     var toCopy = $("#"+copyId).html();
     copyToClipboard(toCopy);
+  });
+  //////////////////////////////////////////////////////////////////////////////
 
-      function copyToClipboard(val){
-          var dummy = document.createElement("input");
-          document.body.appendChild(dummy);
-          dummy.setAttribute("id", "dummy_id");
-          document.getElementById("dummy_id").value=val;
-          dummy.select(val);
-          document.execCommand("copy");
-          document.body.removeChild(dummy);
-        };
+  //
+  //  This monitors when a copy local storage button is clicked and performs the function
+  //
+  $("#copyLS").click(function() {
+    var storage = JSON.stringify(localStorage);
+    copyToClipboard(storage);
+  });
+  //////////////////////////////////////////////////////////////////////////////
+
+  //
+  //  This monitors when an import local storage button is clicked and performs the function
+  //
+  $("#importLS").click(function() {
+    var importData = prompt('Paste');
+    var data = JSON.parse(importData);
+    Object.keys(data).forEach(function (k) {
+        localStorage.setItem(k, data[k]);
+      });
   });
   //////////////////////////////////////////////////////////////////////////////
 
@@ -304,6 +326,36 @@ function createSong() {
 //////////////////////////////////////////////////////////////////////////////
 
 //
+//  This is function to create metronome sound objects
+//
+function createMetronomeSounds() {
+  var playMetro = document.createElement("audio");
+
+    //
+    //  Monitors when the metronome play button is clicked
+    //
+    $(".metronome__button-play").click(function() {
+      var setTempo = $("#mainTempo").html();
+      var sauce = "../audio/metronome/" + setTempo + ".mp3";
+      playMetro.loop = true;
+      playMetro.setAttribute("src", sauce);
+      playMetro.play();
+    });
+    //////////////////////////////////////////////////////////////////////////////
+
+    //
+    //  Monitors when the metronome play button is clicked
+    //
+    $(".metronome__button-stop").click(function() {
+      playMetro.pause();
+    });
+    //////////////////////////////////////////////////////////////////////////////
+};
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+//
 //  Monitors when the metronome tempo-adjust button is clicked
 //
 $(".tempoAdjust").click(function() {
@@ -321,13 +373,11 @@ function tempoAdjust(adjustDir) {
     var newTempo = startTempo - 5;
       if (newTempo < 50) {newTempo = 50};
     $("#mainTempo").html(newTempo);
-    metronomeApp.setTempo(newTempo);
   } else {
     if ( adjustDir == "tempoPlus" ) {
       var newTempo = startTempo - 5 + 10;
-      if (newTempo > 200) {newTempo = 200};
+      if (newTempo > 160) {newTempo = 160};
       $("#mainTempo").html(newTempo);
-      metronomeApp.setTempo(newTempo);
     }
   }
 };
