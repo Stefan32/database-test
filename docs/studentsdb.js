@@ -35,7 +35,8 @@ $(document).ready(function() {
   //
   $("#copyLS").click(function() {
     var storage = JSON.stringify(localStorage);
-    copyToClipboard(storage);
+    console.log(storage);
+    // copyToClipboard(storage);
   });
   //////////////////////////////////////////////////////////////////////////////
 

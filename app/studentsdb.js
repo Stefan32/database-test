@@ -111,7 +111,11 @@ function displayLessons() {
   var student = loadActiveStudent();
   var id = student.id;
   var i = 0;
-  var loopFind = true;
+  if (document.getElementById("lesson-module-container")) {
+    var loopFind = true;
+  } else {
+    var loopFind = false;
+  }  
   while (loopFind == true) {
     var lessonName = id + "L" + i;
     if (localStorage.getItem(lessonName) === null) {
