@@ -55,6 +55,10 @@ $(document).ready(function() {
 //////////////////////////////////////////////////////////////////////////////
 
 
+$( function() {
+    $( "#new-lesson-modal" ).draggable();
+  } );
+
 
 
 //
@@ -115,7 +119,7 @@ function displayLessons() {
     var loopFind = true;
   } else {
     var loopFind = false;
-  }  
+  }
   while (loopFind == true) {
     var lessonName = id + "L" + i;
     if (localStorage.getItem(lessonName) === null) {
