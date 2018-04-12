@@ -25,6 +25,8 @@
 @import "modules/_tool-section";
 @import "modules/_levels";
 @import "modules/_list";
+@import "modules/_drum-kit";
+@import "modules/_video-section";
 
 @import "modules/_wrapper";
 @import "modules/_generic-content-container";

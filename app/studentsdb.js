@@ -54,10 +54,124 @@ $(document).ready(function() {
 });
 //////////////////////////////////////////////////////////////////////////////
 
+//
+// Functions for kick and snare sounds
+//
+function playKick() {
+  if (document.getElementById('kick-sample-sound')) {
+    document.getElementById('kick-sample-sound').play();
+  }
+};
 
-$( function() {
-    $( "#new-lesson-modal" ).draggable();
-  } );
+function playSnare() {
+  if (document.getElementById('snare-sample-sound')) {
+    document.getElementById('snare-sample-sound').play();
+  }
+};
+//////////////////////////////////////////////////////////////////////////////
+
+
+//
+// Functions for bass sounds hold
+//
+function PlayAndRelease(audioElement) {
+  audioElement.play();
+  document.onkeyup = function() {
+    audioElement.pause();
+    audioElement.currentTime = 0;
+  }
+};
+
+
+//
+// Functions for bass sounds
+//
+function playBass(note) {
+  if (document.getElementById('bass-sample-f2q')) {
+    var audioElement;
+    switch (note) {
+      case 113:     // Q
+        audioElement = document.getElementById('bass-sample-f2q');
+        PlayAndRelease(audioElement);
+        break;
+      case 119:     // W
+        audioElement = document.getElementById('bass-sample-g2w');
+        PlayAndRelease(audioElement);
+        break;
+      case 101:     // E
+        audioElement = document.getElementById('bass-sample-a2e');
+        PlayAndRelease(audioElement);
+        break;
+      case 114:     // R
+        audioElement = document.getElementById('bass-sample-b2r');
+        PlayAndRelease(audioElement);
+        break;
+      case 116:     // T
+        audioElement = document.getElementById('bass-sample-c3t');
+        PlayAndRelease(audioElement);
+        break;
+      case 121:     // Y
+        audioElement = document.getElementById('bass-sample-d3y');
+        PlayAndRelease(audioElement);
+        break;
+      case 117:     // U
+        audioElement = document.getElementById('bass-sample-e3u');
+        PlayAndRelease(audioElement);
+        break;
+      case 105:     // I
+        audioElement = document.getElementById('bass-sample-f3i');
+        PlayAndRelease(audioElement);
+        break;
+      case 111:     // O
+        audioElement = document.getElementById('bass-sample-g3o');
+        PlayAndRelease(audioElement);
+        break;
+      case 112:     // P
+        audioElement = document.getElementById('bass-sample-a3p');
+        PlayAndRelease(audioElement);
+        break;
+      }
+  }
+
+/*
+  if (document.getElementById('bass-sample-f2q')) {
+    document.getElementById('bass-sample-c').play();
+    document.onkeyup = function() {
+      document.getElementById('bass-sample-c').pause();
+      document.getElementById('bass-sample-c').currentTime = 0;
+    }
+  }
+  */
+};
+//////////////////////////////////////////////////////////////////////////////
+
+document.onkeypress = function (e, data) {
+  var code = e.which || data;
+  console.log(code);
+    switch (code) {
+      case 13:
+        console.log("enter");
+        break;
+      case 107:     // K
+        playKick();
+        break;
+      case 115:     // S
+        playSnare();
+        break;
+      case 119:     // W
+      case 101:     // E
+      case 114:     // R
+      case 116:     // T
+      case 121:     // Y
+      case 117:     // U
+      case 105:     // I
+      case 111:     // O
+      case 112:     // P
+      case 113:     // Q
+        playBass(code);
+        break;
+      }
+};
 
 
 
@@ -360,6 +474,24 @@ function createMetronomeSounds() {
     //////////////////////////////////////////////////////////////////////////////
 };
 //////////////////////////////////////////////////////////////////////////////
+
+
+//
+//  Monitors when the kick sample button is clicked
+//
+$("#kick-sample-btn").click(function() {
+  playKick();
+});
+//////////////////////////////////////////////////////////////////////////////
+
+//
+//  Monitors when the snare sample button is clicked
+//
+$("#snare-sample-btn").click(function() {
+  playSnare();
+});
+//////////////////////////////////////////////////////////////////////////////
+
 
 
 

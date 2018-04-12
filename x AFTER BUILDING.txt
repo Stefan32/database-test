@@ -1,3 +1,7 @@
+Before building, move videos folder out
+
+
+//////////////////////////////////////////////////////////////////////////////////
 in docs/
 make folder temp/styles
 copy styles-862539.css and rename to styles.css only

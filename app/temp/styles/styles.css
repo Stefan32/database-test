@@ -1000,6 +1000,7 @@ a {
   position: fixed;
   top: 0;
   right: 0;
+
 }
 
 .metronome__heading {
@@ -1366,6 +1367,9 @@ footer {
   top: 0;
   right: 0;
   border: none;
+  background-color: rgba(0, 0, 0, 0.009);
+  height: 100%;
+  width: 200px;
 }
 
 .progress-top {
@@ -1488,6 +1492,17 @@ footer {
 #list > li {
   list-style: none;
   padding-bottom: 7px;
+}
+
+.drum-kit {
+  position: fixed;
+  top: 180px;
+  right: 40px;
+}
+
+.video_container {
+  width: 100%;
+  margin-bottom: 6rem;
 }
 
 .wrapper {
